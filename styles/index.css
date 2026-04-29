@@ -167,6 +167,12 @@ a {
     width: 50px;
 }
 
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+
 .logot {
     display: flex;
     flex-direction: column;
@@ -212,6 +218,49 @@ a {
     * {
         margin: 0;
     }
+     .logot {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    padding: 100px 5%;
+  }
+
+  .logot img {
+    margin: 0; 
+    width: auto;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1110px; 
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .footer-logo {
+    width: 55px;
+  }
+
+  .bottom-links {
+    flex-direction: row;
+    text-align: left;
+    margin-left: 50px;
+    gap: 60px;
+  }
+
+  .bottom-links a:hover {
+    color: hsl(171, 66%, 44%);
+    transition: color 0.3s;
+  }
+
+  .bottom_images {
+    gap: 24px;
+  }
+
+  .link-group {
+    align-items: flex-start;
+  }
 
     .logot {
         flex-direction: row;
