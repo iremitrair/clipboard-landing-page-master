@@ -35,7 +35,7 @@ a {
 .mac-button {
     color: white;
     border-radius: 30px;
-    width: 340px;
+    width: 90%;
     height: 50px;
     font-weight: 600;
     font-size: 18px;
@@ -43,6 +43,7 @@ a {
     box-shadow: inset;
     border-color: none;
     border-style: inherit;
+    max-width: 350px;
 }
 
 .ios-button {
@@ -62,26 +63,44 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 500px;
-    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.content .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+}
+
+.content .second-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
 }
 
 .content .second-section .button-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin-top: 8px;
+    width: 100%;
+    justify-content: center;
 }
 
 .title1,
 .title2 {
     margin-top: 30px;
-    font-size: 46px;
+    font-size: 30px;
     font-weight: 600;
     color: hsl(210, 10%, 33%);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .text1,
@@ -90,8 +109,8 @@ a {
     font-weight: 500;
     margin-top: 15px;
     margin-bottom: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     line-height: 25px;
 }
 
@@ -126,6 +145,12 @@ a {
 
 .supercharge-section .section-title {
     margin: 30px 5px 5px 5px;
+}
+
+.section-intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-title {
@@ -231,8 +256,11 @@ img {
     }
 
     .content {
-        max-width: 1100px;
-        width: 85%;
+        width: 100%;
+    }
+
+    .title1, .title2 {
+        font-size: 46px;
     }
 
     .text1,
@@ -241,8 +269,11 @@ img {
         font-weight: 400;
     }
 
-    .second-section {
-        margin-top: 50px;
+    .content .button-group {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
     }
 
     .content .second-section .button-group {
@@ -255,6 +286,11 @@ img {
     .ios-button {
         margin-bottom: 0px;
         margin-right: 20px;
+    }
+
+    .ios-button, .mac-button {
+        width: 90%;
+        max-width: 350px;
     }
 
     * {
@@ -432,7 +468,7 @@ img {
     }
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
+/* @media (min-width: 640px) and (max-width: 1023px) {
 
     .buttongroup {
         flex-direction: row;
@@ -447,4 +483,4 @@ img {
         width: 220px;
         max-width: 220px;
     }
-}
+} */
