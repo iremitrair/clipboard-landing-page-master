@@ -31,24 +31,26 @@ a {
     height: auto;
 }
 
-.ios-button, .mac-button {
+.ios-button,
+.mac-button {
     color: white;
     border-radius: 30px;
     width: 340px;
     height: 50px;
-    font-weight: 600;    
+    font-weight: 600;
     font-size: 18px;
     cursor: pointer;
     box-shadow: inset;
     border-color: none;
-    border-style:inherit;
+    border-style: inherit;
 }
 
 .ios-button {
-    background-color:hsl(171, 66%, 44%) ;
+    background-color: hsl(171, 66%, 44%);
     margin-bottom: 20px;
     box-shadow: 0px 2px 1px hsl(171, 70%, 22%)
 }
+
 .mac-button {
     background-color: hsl(233, 100%, 69%);
     box-shadow: 0px 2px 1px hsl(233, 70%, 22%);
@@ -61,7 +63,7 @@ a {
     align-items: center;
     text-align: center;
     max-width: 500px;
-    margin:auto;
+    margin: auto;
 }
 
 .content .second-section .button-group {
@@ -72,15 +74,18 @@ a {
     margin-top: 8px;
 }
 
- .title1, .title2 {
+.title1,
+.title2 {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 46px;
     font-weight: 600;
     color: hsl(210, 10%, 33%);
     margin-left: 50px;
     margin-right: 50px;
- }
- .text1, .text2 {
+}
+
+.text1,
+.text2 {
     color: hsl(201, 11%, 66%);
     font-weight: 500;
     margin-top: 15px;
@@ -88,7 +93,7 @@ a {
     margin-left: 50px;
     margin-right: 50px;
     line-height: 25px;
- }
+}
 
 .section-box {
     align-items: center;
@@ -124,6 +129,7 @@ a {
 }
 
 .section-title {
+    color: hsl(210, 10%, 33%);
     font-size: 26px;
     font-weight: 600;
     margin: 50px 5px 5px 5px;
@@ -146,6 +152,7 @@ a {
 }
 
 .subsection-title {
+    color: hsl(210, 10%, 33%);
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0 0 0;
@@ -169,8 +176,8 @@ a {
 }
 
 img {
-  max-width: 100%; 
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -184,6 +191,7 @@ img {
 
 .footer-wrapper {
     background-color: hsl(201, 11%, 96%);
+    margin-top: 190px;
     padding: 60px 0px;
     width: 100%;
 }
@@ -217,17 +225,24 @@ img {
 
 @media (min-width: 1024px) {
 
-        .body {
+    .body {
         background-image: url('images/bg-header-desktop.png');
         background-position: top center;
     }
+
     .content {
         max-width: 1100px;
         width: 85%;
     }
 
-     .second-section {
-        margin-top: 110px;
+    .text1,
+    .text2 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .second-section {
+        margin-top: 50px;
     }
 
     .content .second-section .button-group {
@@ -245,49 +260,50 @@ img {
     * {
         margin: 0;
     }
-     .logot {
-    flex-direction: row;
-    justify-content: center;
-    gap: 80px;
-    padding: 100px 5%;
-  }
 
-  .logot img {
-    margin: 0; 
-    width: auto;
-  }
+    .logot {
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+        padding: 100px 5%;
+    }
 
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1110px; 
-    margin: 0 auto;
-    width: 90%;
-  }
+    .logot img {
+        margin: 0;
+        width: auto;
+    }
 
-  .footer-logo {
-    width: 55px;
-  }
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1110px;
+        margin: 0 auto;
+        width: 90%;
+    }
 
-  .bottom-links {
-    flex-direction: row;
-    text-align: left;
-    margin-left: 50px;
-    gap: 60px;
-  }
+    .footer-logo {
+        width: 55px;
+    }
 
-  .bottom-links a:hover {
-    color: hsl(171, 66%, 44%);
-    transition: color 0.3s;
-  }
+    .bottom-links {
+        flex-direction: row;
+        text-align: left;
+        margin-left: 50px;
+        gap: 60px;
+    }
 
-  .bottom_images {
-    gap: 24px;
-  }
+    .bottom-links a:hover {
+        color: hsl(171, 66%, 44%);
+        transition: color 0.3s;
+    }
 
-  .link-group {
-    align-items: flex-start;
-  }
+    .bottom_images {
+        gap: 24px;
+    }
+
+    .link-group {
+        align-items: flex-start;
+    }
 
     .logot {
         flex-direction: row;
@@ -350,7 +366,7 @@ img {
 
     .section-img {
         margin: 40px 0;
-        width: 1000px;
+        min-width: 700px;
     }
 
     .two-column-section {
@@ -417,7 +433,7 @@ img {
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
-  
+
     .buttongroup {
         flex-direction: row;
         flex-wrap: wrap;
@@ -425,7 +441,9 @@ img {
         width: 100%;
         margin-top: 8px;
     }
-    .ios-button, .mac-button {
+
+    .ios-button,
+    .mac-button {
         width: 220px;
         max-width: 220px;
     }
